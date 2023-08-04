@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="295.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parcial1_progra2.loginController">
+   <children>
+      <Label layoutX="46.0" layoutY="23.0" text="INFORMACION DE USUARIOS DEL SISTEMA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="66.0" text="ID:" />
+      <Label layoutX="85.0" layoutY="94.0" text="NOMBRES:" />
+      <Label layoutX="85.0" layoutY="121.0" text="APELLIDOS:" />
+      <Label layoutX="85.0" layoutY="149.0" text="NICKNAME:" />
+      <Label layoutX="85.0" layoutY="179.0" text="FECHA DE NACIMIENTO" />
+      <Label layoutX="85.0" layoutY="210.0" text="ROL:" />
+      <Label layoutX="85.0" layoutY="244.0" text="CLAVE DE ACCESO:" />
+      <TextField fx:id="txtID" layoutX="228.0" layoutY="62.0" />
+      <TextField fx:id="txtNombres" layoutX="228.0" layoutY="90.0" />
+      <TextField fx:id="txtApellidos" layoutX="228.0" layoutY="117.0" />
+      <TextField fx:id="txtNick" layoutX="227.0" layoutY="145.0" />
+      <DatePicker fx:id="datePicker" layoutX="227.0" layoutY="175.0" prefHeight="26.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbRol" layoutX="227.0" layoutY="206.0" prefWidth="150.0" />
+      <PasswordField fx:id="txtClave" layoutX="228.0" layoutY="240.0" />
+   </children>
+</AnchorPane>

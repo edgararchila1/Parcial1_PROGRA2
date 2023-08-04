@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="253.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parcial1_progra2.menuController">
+   <children>
+      <ToolBar layoutX="13.0" layoutY="39.0" prefHeight="197.0" prefWidth="265.0">
+         <items>
+            <Button fx:id="btnProducts" mnemonicParsing="false" onAction="#callProducts" prefHeight="26.0" prefWidth="122.0" text="Productos" textAlignment="CENTER" />
+            <Button fx:id="btnClientes" mnemonicParsing="false" onAction="#callCostumers" onMouseClicked="#callCostumers" prefHeight="26.0" prefWidth="122.0" text="Clientes" textAlignment="CENTER">
+               <padding>
+                  <Insets top="1.0" />
+               </padding>
+            </Button>
+         </items>
+      </ToolBar>
+      <MenuBar layoutY="1.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de...">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Programa" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Salir">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
